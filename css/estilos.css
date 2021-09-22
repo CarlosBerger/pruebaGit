@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'StickNoBills';
+    src: url('../fonts/StickNoBills-Bold.ttf');
+}
+/* Selector por id : comienza por # */
+#parrafo2{
+    color: green;
+}
+/* Selector por clase : comienza por .*/
+.pAzul{
+    color: blue;
+}
+.pRojo{
+    color: red!important;
+}
+.pNegro{
+    color: black;
+}
+.pRojo.pItalica{
+    font-style: italic;
+}
+
+/* Selector por etiqueta */
+p{
+    color: yellow;
+}
+/* Selector por etiqueta dentro de otra etiqueta */
+#divInterno p{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* Todos los elementos p que aparecen dentro de un div */
+div > p{
+    font-weight: bold;
+    font-size: 40px; 
+}
+
+/* Primer elemento p que aparece a continuacion de un div */
+/* div + p{
+    color: black;
+} */
+/* div ~ p{
+    color: red;
+} */
+
+div p:first-child{
+    color: black;
+}
+
+p::after{
+    content: '';
+    display: block;
+    background-color: red;
+    width: 20px;
+    height: 10px;
+}
+
+h1 + p{
+    font-size: 50px;
+    text-transform:capitalize;
+    font-family: 'StickNoBills';    
+    text-align: center;
+    text-decoration: underline;
+}
+
